@@ -17,9 +17,9 @@ def current_weather_info(latitude, longnitude, api_token):
     wind_deg_now = weather_data["wind"]["deg"]
     temperature_feels_like = weather_data["main"]["feels_like"]
     # Show conditional weather data for requested locations:
-    # precipitation = weather_data["current"]["weather"][0]["main"]
-    precipitation = weather_data["rain"]["1h"]
+    precipitation = weather_data["weather"][0]["main"]
 
+    print(link)
     print(weather_desc_now)
     print(temperature_now)
     print(pressure_now)
